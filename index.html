@@ -7,12 +7,36 @@
 </head>
 <body>
     <header>
-        <h1>Mi Primera Página Web</h1>
+        <h1>Formulario</h1>
     </header>
-    <section>
-        <h2>Bienvenido a mi página web</h2>
-        <p>Esta es una página web de ejemplo.</p>
-    </section>
+    
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="sexo">Género:</label>
+        <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <label>
+            <input type="checkbox" name="suscripcion" value="si"> Suscribirse al boletín
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+
     <footer>
         <p>&copy; 2024 Mi Página Web</p>
     </footer>
